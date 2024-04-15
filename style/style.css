@@ -181,10 +181,11 @@ hr {
     top: 100px;
 }
 
-.text5 {
+.text89 {
     font-size: 15px;
     color: rgb(93, 92, 92);
-    position: relative;
-    top: 110px;
-    left: 80px;
+    margin-top: 115px;
+    margin-left: 70px;
+    margin-bottom: 700px;
+    padding-bottom: -400px;
 }
