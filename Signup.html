@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: hwb(350 81% 7%);
+        }
+        .container {
+            width: 500px;
+            margin: 100px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+        }
+        
+        form {
+            margin-top: 20px;
+        }
+        
+        input {
+            font-size: 20px;
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box; 
+        }
+        
+        input[type="submit"]{
+            background-color: rgb(230, 63, 63);
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box; 
+        }
+        
+        input[type="submit"]:hover {
+            background-color: red;
+        }
+        input[type="checkbox"]{
+            width: auto;
+        }
+        .word{
+            text-align: center;
+            font-size: 25px;
+            color: rgb(88, 85, 85);
+        }
+        
+        .options {
+            margin-top: 20px;
+            border: 1px solid gray;
+            border-radius: 5px;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 10px;
+        }
+        
+        .option-link {
+            display: block;
+            font-size: 16px;
+            text-align: center;
+            margin-top: 10px;
+            text-decoration: none;
+            color: black;
+        }
+        
+        .sentence {
+            font-size: 20px;
+            margin-top: 10px;
+        }
+        
+        .link {
+            text-decoration: none;
+            color: red;
+        }
+        
+        .close-btn {
+            background: none;
+            border: none;
+            padding: 0;
+            font-size: 0.9em;
+            cursor: pointer;
+            float: right; 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Sign Up <button class="close-btn"><i class="fas fa-times"></i></button></h1>
+        <form>
+            <input type="text" id="user_name" placeholder="Full Name" required>
+            <input type="email" placeholder="Email" required>
+            <input type="checkbox" id="agree" required>
+            <span>I agree to Zomato's <a href="#" class="link">Terms of Service</a>, <a href="#" class="link">Privacy Policy</a> and <a href="#" class="link">Content Policies</a> </span>           <input type="submit" value="Create account">
+            <p class="word">or</p>
+            <div class="options">
+                <a href="#" class="option-link"><i class="fab fa-google" style="color: blue;">&nbsp;</i>Sign in with Google</a>
+            </div><br><hr>
+            <p class="sentence">Already have an Account? <a href="#" class="link">Log in</a></p>
+        </form>
+    </div>
+</body>
+</html>
